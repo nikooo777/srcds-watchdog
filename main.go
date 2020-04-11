@@ -28,7 +28,7 @@ func main() {
 
 	info, err := client.QueryInfo() // QueryInfo, QueryPlayer, QueryRules
 	if err != nil {
-		if strings.Contains(err.Error(), "i/o timeout") {
+		if strings.Contains(err.Error(), "i/o timeout") || strings.Contains(err.Error(), "connection refused") {
 			logrus.Errorf("%s is offline", os.Args[1])
 			os.Exit(1)
 		}
