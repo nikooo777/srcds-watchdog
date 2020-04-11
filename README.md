@@ -31,3 +31,8 @@ git clone https://github.com/nikooo777/srcds-watchdog.git
 cd srcds-watchdog
 go build
 ```
+
+##Download
+You can download prebuilt releases [here](https://github.com/nikooo777/srcds-watchdog/releases).
+
+No guarantees that it will work on your system. Also it's always best to compile it yourself!
