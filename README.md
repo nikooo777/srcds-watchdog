@@ -1,6 +1,6 @@
 # srcds-watchdog
 
-##Usage
+## Usage
 This tool queries a given srcds gameserver and returns:
 
 * status 0 if the server is online
@@ -10,7 +10,7 @@ This tool queries a given srcds gameserver and returns:
 
 Additionally for servers that are online, a summary is printed.
 
-##Example:
+## Example:
 
 ```
 $ ./srcds-watchdog 151.80.111.130:27015
@@ -23,7 +23,7 @@ INFO[0000] Version: 5394425
 ```
 
 
-##Building
+## Building
 You will need to have Golang 1.14+ installed. refer to online documentation for how to install it.
 
 ```bash
@@ -32,7 +32,7 @@ cd srcds-watchdog
 go build
 ```
 
-##Download
+## Download
 You can download prebuilt releases [here](https://github.com/nikooo777/srcds-watchdog/releases).
 
 No guarantees that it will work on your system. Also it's always best to compile it yourself!
