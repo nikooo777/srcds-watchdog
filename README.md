@@ -1,5 +1,6 @@
 # srcds-watchdog
 
+##Usage
 This tool queries a given srcds gameserver and returns:
 
 * status 0 if the server is online
@@ -9,9 +10,11 @@ This tool queries a given srcds gameserver and returns:
 
 Additionally for servers that are online, a summary is printed.
 
-Example:
+##Example:
 
 ```
+$ ./srcds-watchdog 151.80.111.130:27015
+
 INFO[0000] 151.80.111.130:27015 is online               
 INFO[0000] Hostname: Covid-19 Mod (V1) by ElitE HunterZ |Voice, Rank, 2020 event| 
 INFO[0000] Players: 53/64                                
@@ -20,4 +23,11 @@ INFO[0000] Version: 5394425
 ```
 
 
-#building
+##Building
+You will need to have Golang 1.14+ installed. refer to online documentation for how to install it.
+
+```bash
+git clone https://github.com/nikooo777/srcds-watchdog.git
+cd srcds-watchdog
+go build
+```
