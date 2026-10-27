@@ -38,6 +38,6 @@ go build
 ```
 
 ## Download
-You can download prebuilt releases [here](https://github.com/nikooo777/srcds-watchdog/releases).
+Prebuilt binaries for Linux (amd64, arm64) and Windows (amd64) are attached to each [release](https://github.com/nikooo777/srcds-watchdog/releases).
 
 No guarantees that it will work on your system. Also it's always best to compile it yourself!
