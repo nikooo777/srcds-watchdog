@@ -1,30 +1,35 @@
 # srcds-watchdog
 
 ## Usage
-This tool queries a given srcds gameserver and returns:
+This tool queries a given srcds gameserver and exits with:
 
-* status 0 if the server is online
-* status 1 if the server is offline
-* status 2 if the program malfunctions
-* status 3 if the parameters passed are wrong
+* code 0 if the server is online
+* code 1 if the server is offline (timeout or connection refused)
+* code 2 if the program malfunctions
+* code 3 if the parameters passed are wrong
 
 Additionally for servers that are online, a summary is printed.
 
-## Example:
+## Example
 
 ```
-$ ./srcds-watchdog 151.80.111.130:27015
+$ ./srcds-watchdog 54.37.245.51:27045
 
-INFO[0000] 151.80.111.130:27015 is online               
-INFO[0000] Hostname: Covid-19 Mod (V1) by ElitE HunterZ |Voice, Rank, 2020 event| 
-INFO[0000] Players: 53/64                                
-INFO[0000] Game: ████► Zombie Hunting                   
-INFO[0000] Version: 5394425   
+INFO[0000] 54.37.245.51:27045 is online
+INFO[0000] Hostname: Zombie Hunting V3.1 by ElitE HunterZ |All Weapons|Rank|Respawn
+INFO[0000] Players: 26/64
+INFO[0000] Game: ████► Zombie All Weapons
+INFO[0000] Version: 11003710
 ```
 
+## Installing
+You will need Go 1.27+ installed. Refer to the [official documentation](https://go.dev/doc/install) for how to install it.
+
+```bash
+go install github.com/nikooo777/srcds-watchdog@latest
+```
 
 ## Building
-You will need to have Golang 1.14+ installed. refer to online documentation for how to install it.
 
 ```bash
 git clone https://github.com/nikooo777/srcds-watchdog.git

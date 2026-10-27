@@ -1,10 +1,10 @@
-module srcds-watchdog
+module github.com/nikooo777/srcds-watchdog
 
-go 1.18
+go 1.27.0
 
 require (
-	github.com/rumblefrog/go-a2s v1.0.2
-	github.com/sirupsen/logrus v1.9.0
+	github.com/nikooo777/blaster v0.0.0-20261027224721-d7f8ed299c61
+	github.com/sirupsen/logrus v1.10.2
 )
 
-require golang.org/x/sys v0.0.0-20220715151400-c0bba94af5f8 // indirect
+require golang.org/x/sys v0.49.0 // indirect
